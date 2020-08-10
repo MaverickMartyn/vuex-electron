@@ -118,6 +118,7 @@ class PersistedState {
     var i
     path = path.split(".")
     for (i = 0; i < path.length - 1; i++) {
+      obj[path[i]] = {}
       obj = obj[path[i]]
     }
 
